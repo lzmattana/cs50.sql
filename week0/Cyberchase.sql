@@ -10,10 +10,14 @@ air_date, which is the date (expressed as YYYY-MM-DD) on which the episode “ai
 production_code, which is the unique ID used by PBS to refer to each episode internally */
 
 -- In 1.sql, write a SQL query to list the titles of all episodes in Cyberchase’s original season, Season 1. --
-select title from episodes where season = 1;
+SELECT title 
+FROM episodes 
+WHERE season = 1;
 
 --In 2.sql, list the season number of, and title of, the first episode of every season.
-select title, season from episodes where episode_in_season = 1;
+SELECT title, season 
+FROM episodes 
+WHERE episode_in_season = 1;
 
 --In 3.sql, find the production code for the episode “Hackerized!”.
 SELECT production_code
